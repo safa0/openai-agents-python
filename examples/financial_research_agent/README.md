@@ -4,11 +4,20 @@ This example shows how you might compose a richer financial research agent using
 
 The flow is:
 
-1. **Planning**: A planner agent turns the end user’s request into a list of search terms relevant to financial analysis – recent news, earnings calls, corporate filings, industry commentary, etc.
+1. **Planning**: A planner agent turns the end user's request into a list of search terms relevant to financial analysis – recent news, earnings calls, corporate filings, industry commentary, etc.
 2. **Search**: A search agent uses the built‑in `WebSearchTool` to retrieve terse summaries for each search term. (You could also add `FileSearchTool` if you have indexed PDFs or 10‑Ks.)
 3. **Sub‑analysts**: Additional agents (e.g. a fundamentals analyst and a risk analyst) are exposed as tools so the writer can call them inline and incorporate their outputs.
 4. **Writing**: A senior writer agent brings together the search snippets and any sub‑analyst summaries into a long‑form markdown report plus a short executive summary.
 5. **Verification**: A final verifier agent audits the report for obvious inconsistencies or missing sourcing.
+
+## Dependencies
+
+This example requires the following dependencies:
+```bash
+pip install openai pydantic rich
+```
+
+## Usage
 
 You can run the example with:
 

@@ -6,6 +6,13 @@ This is a simple example of a multi-agent research bot. To run it:
 python -m examples.research_bot.main
 ```
 
+## Dependencies
+
+This example requires the following dependencies:
+```bash
+pip install openai pydantic rich
+```
+
 ## Architecture
 
 The flow is:
