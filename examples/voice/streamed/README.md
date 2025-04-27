@@ -2,6 +2,13 @@
 
 This is an interactive demo, where you can talk to an Agent conversationally. It uses the voice pipeline's built in turn detection feature, so if you stop speaking the Agent responds.
 
+## Dependencies
+
+This example requires the following dependencies:
+```bash
+pip install openai-agents pydantic numpy websockets sounddevice
+```
+
 Run via:
 
 ```

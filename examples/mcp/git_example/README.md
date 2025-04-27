@@ -2,6 +2,14 @@
 
 This example uses the [git MCP server](https://github.com/modelcontextprotocol/servers/tree/main/src/git), running locally via `uvx`.
 
+## Dependencies
+
+This example requires the following dependencies:
+```bash
+pip install openai pydantic mcp uvx
+```
+Note: MCP requires Python 3.10 or above.
+
 Run it via:
 
 ```

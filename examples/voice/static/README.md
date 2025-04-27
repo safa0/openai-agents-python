@@ -2,6 +2,13 @@
 
 This demo operates by capturing a recording, then running a voice pipeline on it.
 
+## Dependencies
+
+This example requires the following dependencies:
+```bash
+pip install openai pydantic numpy websockets sounddevice
+```
+
 Run via:
 
 ```
